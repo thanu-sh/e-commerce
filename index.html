@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Simple E-Commerce Website</h1>
+        <p>your one-stop shop for everything!</p>
+    </header>
+    <main>
+        <section id="product">
+            <h2>Products</h2>
+            <div class="product"
+            data-name="Unicorn" data-price="10">
+            <h3>Unicorn</h3>
+            <p>Price: $10</p>
+             <button onclick="addToCart('Unicorn',10)">Add to Cart</button>
+            </div>
+            <div class="product"
+            data-name="Kinder Joy" data-price="20">
+            <h3>Kinder Joy</h3>
+            <p>Price: $20</p>
+            <button onclick="addToCart('Kinder Joy',20)">Add to Cart</button>
+            </div>
+            <div class="product"
+            data-name="KFC" data-price="15">
+            <h3>KFC</h3>
+            <p>Price: $15</p>
+            <button onclick="addToCart('KFC',15)">Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Total: $<span id="cart-total">0</span></strong></p>
+        <button onclick="checkout()">checkout</button>
+        </section>
+        </main>
+        <footer>
+            <p>&copy;a simple E-commerce</p>
+            </footer>
+            <script src="script.js"></script>
+</body>
+</html>
